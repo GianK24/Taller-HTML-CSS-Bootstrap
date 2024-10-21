@@ -138,7 +138,6 @@ nav.d-flex .profile-menu button img {
     justify-content: center;
     align-items: center;
     border: none;
-    margin-left: 15px;
     padding: 0;
     position: relative;
     overflow: hidden;
@@ -148,20 +147,6 @@ nav.d-flex .profile-menu button img {
 .search-btn img {
     width: 24px; 
     height: 24px;
-    fill: white;
-}
-
-/* Adjust spacing for mobile devices */
-@media (max-width: 768px) {
-    .search-item {
-        padding: 10px 5px;
-    }
-
-    .search-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
 }
 
 /* General hover effect for all buttons and nav-links */
@@ -192,42 +177,87 @@ nav.d-flex .profile-menu button img:hover {
     transition: background-color 0.3s, border-radius 0.3s; 
 }
 
-.search-btn i {
-    font-size: 20px;
+.row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 150px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
+.card-equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  
+  .card-equal-height .card-body {
+    flex-grow: 1;
+  }
+  
+  .card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .card-title {
     font-weight: bold;
-}
+    font-size: medium;
+  }
 
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-/* Explore Section */
-.explore {
-    margin-top: 50px;
-}
-
-.explore img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.explore h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
+  .card-text {
+    font-size: small;
+  }
+  
+  .card-price {
     font-weight: bold;
+    font-size: small;
+    color: #000;
 }
+
+.light-text {
+    font-weight: normal;
+}
+
+  
+  .rating {
+    color: #ffc107;
+  }
+  
+  .bi-heart {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .bi-heart:hover {
+    color: red;
+  }
+ 
+
+
+
+footer{
+    border-top: 1px solid #eee;
+}
+
+.footer-text a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-icons a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-icons i {
+    margin-right: 5px;
+  }
+  

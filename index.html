@@ -8,6 +8,9 @@
     <link rel="icon" href="images/airbnb-icon.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -76,57 +79,235 @@
                 <img src="svg/search.svg" alt="Search icon">
             </button>
         </form>
-        
+
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Encuentra tu próximo destino</h1>
-        <p>Descubre alojamientos únicos alrededor del mundo</p>
-    </section>
+    <body>
 
-    <!-- Search Section -->
-    <section class="container search-section">
-        <form>
+
+        <!-- Tarjetas -->
+        <div class="container">
+            <div class="row ">
+                <!-- Tarjeta 1 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Machachi.png" class="card-img-top" alt="Machachi">
+                        <div class="card-body">
+                            <h5 class="card-title">Machachi, Ecuador</h5>
+                            <p class="card-text">A 750 kilómetros de distancia<br>21 - 26 de oct</p>
+                            <p class="card-price">$431,564 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.85</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Sopo.png" class="card-img-top" alt="Sopo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopó, Colombia</h5>
+                            <p class="card-text">A 39 kilómetros de distancia<br>5 - 10 de nov</p>
+                            <p class="card-price">$327,040 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.99</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/San_Isidro.png" class="card-img-top" alt="San_Isidro">
+                        <div class="card-body">
+                            <h5 class="card-title">San Isidro, Costa Rica</h5>
+                            <p class="card-text">A 1256 kilómetros de distancia<br>27 de oct - 1 de nov</p>
+                            <p class="card-price">$382,803 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.85</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Manuel_Antonio.png" class="card-img-top" alt="Manuel_Antonio">
+                        <div class="card-body">
+                            <h5 class="card-title">Manuel Antonio, Costa Rica</h5>
+                            <p class="card-text">A 1233 kilómetros de distancia<br>20 - 25 de oct</p>
+                            <p class="card-price">$365,541 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.93</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Ubicación">
-                </div>
+                <!-- Tarjeta 5 -->
                 <div class="col-md-3">
-                    <input type="date" class="form-control" placeholder="Fecha de entrada">
+                    <div class="card card-equal-height">
+                        <img src="images/Medellin.png" class="card-img-top" alt="Medellin">
+                        <div class="card-body">
+                            <h5 class="card-title">Medellín, Colombia</h5>
+                            <p class="card-text">A 240 kilómetros de distancia<br>31 de oct – 5 de nov</p>
+                            <p class="card-price">$278,664 COP  <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.95</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <input type="date" class="form-control" placeholder="Fecha de salida">
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-block">Buscar</button>
-                </div>
-            </div>
-        </form>
-    </section>
 
-    <!-- Explore Section -->
-    <section class="container explore">
-        <h2>Explora destinos populares</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <img src="paris.jpg" alt="Paris">
-                <h3>París</h3>
+                <!-- Tarjeta 6 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Villa_de_Leyva.png" class="card-img-top" alt="Villa_de_Leyva">
+                        <div class="card-body">
+                            <h5 class="card-title">Villa de Leyva, Colombia</h5>
+                            <p class="card-text">A 131 kilómetros de distancia<br>21 - 26 de oct</p>
+                            <p class="card-price">$240,608 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.94</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Villeta.png" class="card-img-top" alt="Villeta">
+                        <div class="card-body">
+                            <h5 class="card-title">Villeta, Colombia</h5>
+                            <p class="card-text">A 66 kilómetros de distancia<br>8 - 13 de dic</p>
+                            <p class="card-price">$1,228,200 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.94</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 8 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/San_Francisco.png" class="card-img-top" alt="San_Francisco">
+                        <div class="card-body">
+                            <h5 class="card-title">San Francisco, Colombia</h5>
+                            <p class="card-text">A 48 kilómetros de distancia<br>21 - 26 de oct</p>
+                            <p class="card-price">$364,994 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.96</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="newyork.jpg" alt="New York">
-                <h3>New York</h3>
-            </div>
-            <div class="col-md-4">
-                <img src="tokyo.jpg" alt="Tokyo">
-                <h3>Tokio</h3>
+
+            <div class="row ">
+                <!-- Tarjeta 9 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/La_Mesa.png" class="card-img-top" alt="La_Mesa">
+                        <div class="card-body">
+                            <h5 class="card-title">La Mesa, Colombia</h5>
+                            <p class="card-text">A 44 kilómetros de distancia<br>22 - 27 de oct</p>
+                            <p class="card-price">$3,303,769 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 10 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Playa_Flamingo.png" class="card-img-top" alt="Playa_Flamingo">
+                        <div class="card-body">
+                            <h5 class="card-title">Playa Flamingo, Costa Rica</h5>
+                            <p class="card-text">A 1444  kilómetros de distancia<br>21 – 26 de oct</p>
+                            <p class="card-price">$18,098,144 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i></span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 11 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/El_Eden.png" class="card-img-top" alt="El_Eden">
+                        <div class="card-body">
+                            <h5 class="card-title">El Eden, Colombia</h5>
+                            <p class="card-text">A 187 kilómetros de distancia<br>21 – 26 de oct</p>
+                            <p class="card-price">$1,006,665 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 5.0</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 12 -->
+                <div class="col-md-3">
+                    <div class="card card-equal-height">
+                        <img src="images/Apulo.png" class="card-img-top" alt="Apulo">
+                        <div class="card-body">
+                            <h5 class="card-title">Apulo, Colombia</h5>
+                            <p class="card-text">A 56 kilómetros de distancia<br>21 – 26 de oct</p>
+                            <p class="card-price">$1,697,184 COP <span class="light-text">noche</span></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="rating"><i class="bi bi-star-fill"></i> 4.84</span>
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        
+    </body>
 
     <!-- Footer -->
-    <footer class="container mt-5 text-center">
-        <p>&copy; 2024 Airbnb Clone - Clonado con fines educativos.</p>
+    <footer class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="footer-text">
+                <p class="mb-0">© 2024 Airbnb, Inc. ·
+                    <a href="#">Privacidad</a> ·
+                    <a href="#">Términos</a> ·
+                    <a href="#">Mapa del sitio</a> ·
+                    <a href="#">Datos de la empresa</a>
+                </p>
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="me-2"><i class="bi bi-globe"></i>Español (CO)</a>
+                <a href="#" class="me-3"><i class="bi bi-currency-dollar"></i>COP</a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="ms-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="ms-2"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
