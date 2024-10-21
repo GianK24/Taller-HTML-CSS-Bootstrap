@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Alojamientos para vacaciones, cabañas, casas en la playa y más</title>
+    <link rel="icon" href="images/airbnb-icon.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div>
+                <a href="/index.html">
+                    <img src="images/airbnb-logo.png" alt="Airbnb Logo" width="120">
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estadías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiencias</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Profile and Icons -->
+            <nav class="d-flex align-items-center">
+                <div>
+                    <a href="#">
+                        <button>
+                            Pon tu espacio en Airbnb
+                        </button>
+                    </a>
+                    <button type="button">
+                        <img src="svg/world.svg" alt="World icon">
+                    </button>
+                </div>
+                <div class="profile-menu">
+                    <button type="button">
+                        <img src="svg/menu.svg" alt="Menu icon">
+                        <img src="svg/profile.svg" alt="Profile icon">
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Search Form -->
+        <form class="d-flex justify-content-between align-items-center p-3 rounded search-bar">
+            <div class="search-item">
+                <label>Dónde</label>
+                <input type="text" class="form-control" placeholder="Explora destinos">
+            </div>
+            <div class="search-item">
+                <label>Llegada</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="search-item">
+                <label>Salida</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="search-item">
+                <label>Quién</label>
+                <input type="number" class="form-control" placeholder="¿Cuántos?">
+            </div>
+            <button type="submit" class="btn btn-danger search-btn">
+                <img src="svg/search.svg" alt="Search icon">
+            </button>
+        </form>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Encuentra tu próximo destino</h1>
+        <p>Descubre alojamientos únicos alrededor del mundo</p>
+    </section>
+
+    <!-- Search Section -->
+    <section class="container search-section">
+        <form>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Ubicación">
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control" placeholder="Fecha de entrada">
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control" placeholder="Fecha de salida">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-block">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="container explore">
+        <h2>Explora destinos populares</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="paris.jpg" alt="Paris">
+                <h3>París</h3>
+            </div>
+            <div class="col-md-4">
+                <img src="newyork.jpg" alt="New York">
+                <h3>New York</h3>
+            </div>
+            <div class="col-md-4">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokio</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mt-5 text-center">
+        <p>&copy; 2024 Airbnb Clone - Clonado con fines educativos.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    background-color: white;
+}
+
+/* Logo in the header */
+header img {
+    width: 120px;
+}
+
+/* Navigation styles */
+.nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #ff385c;
+}
+
+/* Profile and Icons */
+/* Nav container: already using d-flex (flexbox) to align horizontally */
+nav.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* General style for divs inside the nav to align elements horizontally */
+nav.d-flex > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the "Pon tu espacio en Airbnb" link */
+nav.d-flex a div {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+}
+
+nav.d-flex a div:hover {
+    color: #ff385c;
+}
+
+/* Button containing the world icon */
+nav.d-flex button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+nav.d-flex button img {
+    width: 20px;
+    height: 20px;
+}
+
+nav.d-flex button div {
+    margin-right: 10px; /* Adds space between the icon and other elements */
+}
+
+
+button:hover {
+    background-color: #e5e5e5;
+}
+
+/* Styles for the profile and menu icons */
+nav.d-flex .profile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 20%;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+nav.d-flex .profile-menu button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* General styles for the search bar */
+.search-bar {
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: auto; /* Center the form */
+    border-radius:  45px!important;
+}
+
+/* Space between each input section */
+.search-item {
+    flex-grow: 1;   
+    padding: 0 15px;
+}
+
+.search-item label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-item input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-item input:focus {
+    outline: none;
+    border-bottom-color: #ff385c;
+}
+
+/* Style for the search button */
+.search-btn {
+    background-color: #ff385c;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 15px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.search-btn img {
+    width: 24px; 
+    height: 24px;
+    fill: white;
+}
+
+/* Adjust spacing for mobile devices */
+@media (max-width: 768px) {
+    .search-item {
+        padding: 10px 5px;
+    }
+
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* General hover effect for all buttons and nav-links */
+.nav-link:hover,
+nav.d-flex button:hover {
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+
+/* Hover effect para el botón */
+nav.d-flex .profile-menu:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+    background-color: #f9f9f9; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Hover effect para los íconos */
+nav.d-flex .profile-menu button img:hover {
+    background-color: #f0f0f0; 
+    border-radius: 50%; 
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for icons */
+nav.d-flex button div:hover,
+nav.d-flex .profile-menu button img:hover {
+    background-color: #f0f0f0; 
+    border-radius: 50%; 
+    transition: background-color 0.3s, border-radius 0.3s; 
+}
+
+.search-btn i {
+    font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Explore Section */
+.explore {
+    margin-top: 50px;
+}
+
+.explore img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.explore h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
